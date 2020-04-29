@@ -48,12 +48,12 @@ function reduceToAllTrue(array) {
 
 function reduceToAnyTrue(array) {
     return array.reduce(function (acc, val) {
-        // if (val) {
-        //     return true;
-        // }else {
-        //     return false;
-        // }
-        (val) ? true : false;
+        if (val) {
+            return true;
+        }else {
+            return false;
+        }
+        // (val) ? true : false;
     })
 }
 
