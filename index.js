@@ -22,6 +22,8 @@ const mapToNegativize = function(array) {
 
  const mapToSquare = (array) => array.map((elment) => elment ** 2);
  console.log(mapToSquare(arr));
+
+
 //---------------- REDUCE ---------------------------//
 const reduceArr = [1, 2, 3];
 let init = 100;
@@ -46,13 +48,15 @@ function reduceToAllTrue(array) {
 
 function reduceToAnyTrue(array) {
     return array.reduce(function (acc, val) {
-        if (val) {
-            return true;
-        }else {
-            return false;
-        }
+        // if (val) {
+        //     return true;
+        // }else {
+        //     return false;
+        // }
+        (val) ? true : false;
     })
 }
+
 
 
 
